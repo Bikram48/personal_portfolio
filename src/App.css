@@ -35,5 +35,101 @@
   width: 20px;
 }
 
+.sidebar {
+  margin: 150px 0;
+  background-color: white;
+  border-radius: 20px;
+  position: relative;
+  padding-bottom: 20px;
+}
 
+.sidebar img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  position: absolute;
+  left: 50%;
+  top: -2px;
+  bottom: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 20px;
+}
+
+.sidebar-info {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.sidebar-info p.name {
+  color: #0B0909;
+  font-weight: bold;
+  font-size: 1.5rem;
+  font-family: "Raleway", serif;
+  line-height: 2;
+}
+
+.sidebar .social-icons {
+  margin: 10px 0;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.sidebar .icon {
+  width: 40px;
+  height: 40px;
+  background-color: #F2F7FC;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.sidebar .contact-info {
+  background-color: #F2F5F9;
+  border-radius: 20px;
+  margin: 0 25px;
+  padding: 33px;
+}
+
+.sidebar .info {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #E3E3E3;
+  margin-bottom: 10px;
+}
+
+.linkedin-icon {
+  color: #0077B5;
+}
+
+.sidebar .icon1,
+.sidebar .icon2 {
+  color:#FF9C1B;
+}
+
+.sidebar .icon3 {
+  color: #E80505;
+}
+
+.sidebar .info .text {
+  text-align: left;
+}
+
+.sidebar button {
+  border: none;
+  outline: none;
+  background: linear-gradient(to right, #FF9C1A 0%, #E80505 100%);
+  padding: 10px;
+  border-radius: 20px;
+  color: white;
+  margin-top: 10px;
+}
 
