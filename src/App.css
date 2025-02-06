@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header h1 {
+  font-family: "Pacifico", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.5rem;
+}
+
+.lastname {
+  background: linear-gradient(to right, #FF9C1A 0%, #ED250A 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.background-changer li {
+  list-style-type: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #EBF2FA;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  filter: drop-shadow(0px 0px 2px #0B0909);
+}
+
+.background-changer img {
+  height: 20px;
+  width: 20px;
+}
+
+
+
