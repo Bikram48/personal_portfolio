@@ -15,7 +15,7 @@ export default function Header({ color, setColor }) {
   return (
     <div className="header">
       <h1>
-        <a style={{ textDecoration: "none" }} href="/personal_portfolio">
+        <a style={{ textDecoration: "none" }} href="/personal_portfolio/">
           Bikram <span className="lastname">Chand</span>
         </a>
       </h1>
