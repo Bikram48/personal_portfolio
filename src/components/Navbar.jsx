@@ -30,14 +30,6 @@ export default function Navbar() {
             Projects
           </NavLink>
         </li>
-        <li>
-          <NavLink to="/contact">
-            <span>
-              <BiSolidContact />
-            </span>
-            Contact
-          </NavLink>
-        </li>
       </ul>
     </div>
   );

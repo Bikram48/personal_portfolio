@@ -15,6 +15,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Main />} />
             <Route path="/resume" element={<Main />} />
+            <Route path="/projects" element={<Main />} />
           </Routes>
         </BrowserRouter>
       </div>
