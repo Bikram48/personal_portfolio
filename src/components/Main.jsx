@@ -9,7 +9,7 @@ export default function Main() {
   return (
     <div className="main-content">
       <Navbar />
-      {location.pathname === "/" && <About />}
+      {location.pathname === "/personal_portfolio" && <About />}
       {location.pathname === "/resume" && <Resume />}
       {location.pathname === "/projects" && <Projects />}
     </div>

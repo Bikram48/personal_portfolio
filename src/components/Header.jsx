@@ -1,9 +1,6 @@
 import { useEffect } from "react";
 import icon from "../assets/img/half-moon.svg";
 import { RxHamburgerMenu } from "react-icons/rx";
-import { NavLink } from "react-router-dom";
-import { FaHome, FaBriefcase } from "react-icons/fa";
-import { IoDocumentTextOutline } from "react-icons/io5";
 
 export default function Header({ color, setColor }) {
   function handleClick() {
@@ -18,7 +15,7 @@ export default function Header({ color, setColor }) {
   return (
     <div className="header">
       <h1>
-        <a style={{ textDecoration: "none" }} href="/">
+        <a style={{ textDecoration: "none" }} href="/personal_portfolio">
           Bikram <span className="lastname">Chand</span>
         </a>
       </h1>

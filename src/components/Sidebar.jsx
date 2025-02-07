@@ -39,7 +39,7 @@ export default function Sidebar() {
       <div className="mobile-navbar">
         <ul>
           <li>
-            <NavLink to="/">
+            <NavLink to="/personal_portfolio">
               <span>
                 <FaHome />
               </span>
