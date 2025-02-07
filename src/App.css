@@ -211,6 +211,53 @@
   flex-direction: column;
   gap: 1em;
   position: relative;
+  flex-grow: 1;
+}
+
+.resume-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.resume-content .education,
+.resume-content .experience {
+  flex: 1;
+}
+
+.resume-content .education {
+  position: relative;
+}
+
+.resume-content .education::after {
+  position: absolute;
+  content: "";
+  width: 1px;
+  height: 60%;
+  background: linear-gradient(to top, #FF9C1A 0%, #E80505 100%);
+  top: 0;
+  left: -8px;
+  top: 55%;
+  transform: translateY(-50%);
+}
+
+.resume-content .item {
+  background-color: #FFE3BF;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.resume-content .title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 1.5em;
+}
+
+.resume-content .title h3 {
+  font-weight: 400;
+  font-size: 1.68rem;
 }
 
 
@@ -229,6 +276,10 @@
   .aboutme {
     padding: 20px 80px;
   }
+
+  .resume-content {
+    flex-direction: row;
+  }
 }
 
 @media(min-width: 1085px) {
@@ -241,6 +292,10 @@
     position: absolute;
     top: 50%;
     right: -220px;
+  }
+
+  .resume-content {
+    justify-content: space-between;
   }
 }
 
