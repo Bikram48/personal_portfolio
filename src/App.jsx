@@ -9,17 +9,17 @@ function App() {
   const [color, setColor] = useState(true);
   return (
     <div className="App">
-      <Header color={color} setColor={setColor} />
-      <div className="main">
-        <Sidebar />
-        <BrowserRouter>
+      <BrowserRouter>
+        <Header color={color} setColor={setColor} />
+        <div className="main">
+          <Sidebar />
           <Routes>
             <Route path="/" element={<Main />} />
             <Route path="/resume" element={<Main />} />
             <Route path="/projects" element={<Main />} />
           </Routes>
-        </BrowserRouter>
-      </div>
+        </div>
+      </BrowserRouter>
     </div>
   );
 }

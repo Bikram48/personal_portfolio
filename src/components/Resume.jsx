@@ -16,12 +16,12 @@ export default function Resume() {
             <h3>Experience</h3>
           </div>
           <div className="item item-1">
-            <p>2020-2021</p>
-            <h4>Computer Lab Tutor</h4>
+            <p>Aug 2024 - Present</p>
+            <h4>Graduate Data Science Peer Tutor</h4>
             <p>University of New Haven</p>
           </div>
           <div className="item item-1">
-            <p>2020-2021</p>
+            <p>Dec 2021 - Nov 2022</p>
             <h4>Web Developer</h4>
             <p>ThemeGrill</p>
           </div>
@@ -34,12 +34,12 @@ export default function Resume() {
             <h3>Education</h3>
           </div>
           <div className="item item-1">
-            <p>2020-2021</p>
+            <p>Aug 2023 - May 2025</p>
             <h4>University of New Haven</h4>
             <p>MS. in Data Science</p>
           </div>
           <div className="item item-1">
-            <p>2020-2021</p>
+            <p>Jan 2018 - Sep 2021</p>
             <h4>The British College</h4>
             <p>BSc. Computing</p>
           </div>
