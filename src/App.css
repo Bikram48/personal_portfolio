@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 .header {
   display: flex;
@@ -36,7 +37,6 @@
 }
 
 .sidebar {
-  margin: 150px 0;
   background-color: white;
   border-radius: 20px;
   position: relative;
@@ -131,5 +131,111 @@
   border-radius: 20px;
   color: white;
   margin-top: 10px;
+}
+
+.main {
+  margin: 150px 0;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+
+.desktop-navbar {
+  display: none;
+}
+
+.desktop-navbar ul {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+  background-color: #fefefe;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.desktop-navbar ul li {
+  list-style-type: none;
+}
+
+.desktop-navbar li a {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 17px;
+  background-color: #E1E8EF;
+  border-radius: 20px;
+  font-size: .75em;
+  color: black;
+}
+
+/* .desktop-navbar li a:visited {
+  background-color: red;
+} */
+
+.aboutme {
+  background-color: white;
+  border-radius: 20px;
+  padding: 20px;
+  flex-grow: 1;
+}
+
+.aboutme h2 {
+  font-family: "Poppins", serif;
+  font-size: 2.5rem;
+  font-weight: 400;
+  position: relative;
+  display: inline-block;
+}
+
+.aboutme p {
+  line-height: 30px;
+}
+
+/* .title .line {
+  width: 252px;
+  height: 1px;
+  background: linear-gradient(to right, #FE9119 0%, #ED250A 100%);
+  align-items: center;
+  justify-content: center;
+} */
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  position: relative;
+}
+
+
+@media(min-width: 768px) {
+  .main {
+    flex-direction: row;
+  }
+
+  .desktop-navbar {
+    display: flex;
+    align-self: flex-end;
+    position: absolute;
+    top: -100px;
+  }
+
+  .aboutme {
+    padding: 20px 80px;
+  }
+}
+
+@media(min-width: 1085px) {
+  .aboutme h2::after {
+    content: '';
+    width: 200px;
+    height: 2px;
+    background: linear-gradient(to right, #FE9119 0%, #ED250A 100%);
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    right: -220px;
+  }
 }
 
