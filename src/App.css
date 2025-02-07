@@ -170,6 +170,11 @@
   color: black;
 }
 
+.desktop-navbar a.active {
+  background: linear-gradient(to top, #FF9C1A 0%, #E80505 100%);
+  color: white
+}
+
 /* .desktop-navbar li a:visited {
   background-color: red;
 } */
