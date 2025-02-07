@@ -6,9 +6,10 @@ import Main from "./components/Main";
 import Sidebar from "./components/Sidebar";
 
 function App() {
+  const [color, setColor] = useState(true);
   return (
     <div className="App">
-      <Header />
+      <Header color={color} setColor={setColor} />
       <div className="main">
         <Sidebar />
         <BrowserRouter>
