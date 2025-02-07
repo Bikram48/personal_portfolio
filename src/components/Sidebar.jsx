@@ -3,14 +3,42 @@ import { FaLinkedinIn, FaGithub, FaDownload } from "react-icons/fa";
 import { MdOutlineMailOutline } from "react-icons/md";
 import { IoLocationOutline } from "react-icons/io5";
 import { IoIosPhonePortrait } from "react-icons/io";
+import { useState } from "react";
+import { useEffect } from "react";
 
 export default function Sidebar() {
+  const roles = ["Data Analyst", "Data Engineer", "Data Scientist"];
+  const [currentRoleIndex, setCurrentRoleIndex] = useState(0);
+  const [displayText, setDisplayText] = useState("");
+  const [charIndex, setCharIndex] = useState(0);
+
+  useEffect(() => {
+    const typeInterval = setInterval(() => {
+      if (charIndex < roles[currentRoleIndex].length) {
+        setDisplayText(
+          (prevText) => prevText + roles[currentRoleIndex][charIndex]
+        );
+        setCharIndex((prevCharIndex) => prevCharIndex + 1);
+      } else {
+        clearInterval(typeInterval);
+        setTimeout(() => {
+          setDisplayText("");
+          setCharIndex(0);
+          setCurrentRoleIndex((prevIndex) => (prevIndex + 1) % roles.length);
+        }, 2000);
+      }
+    }, 150);
+
+    return () => clearInterval(typeInterval);
+  }, [charIndex, currentRoleIndex]);
   return (
     <div className="sidebar">
       <img src={profile} alt="" />
       <div className="sidebar-info">
         <p className="name">Bikram Chand</p>
-        <p>Data Scientist</p>
+        <div className="role-animator">
+          <p className="animated-role">{displayText}</p>
+        </div>
         <div className="social-icons">
           <div className="icon">
             <FaLinkedinIn className="linkedin-icon" />
