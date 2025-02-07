@@ -105,7 +105,7 @@ export default function Sidebar() {
                 <p>West Haven, CT</p>
               </div>
             </div>
-            <a href="/resume.pdf" download="My_Resume.pdf">
+            <a href="/personal_portfolio/resume.pdf" download="My_Resume.pdf">
               <button style={{ cursor: "pointer" }}>
                 <FaDownload />
                 Download Resume
