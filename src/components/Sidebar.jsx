@@ -51,7 +51,7 @@ export default function Sidebar() {
               <span>
                 <IoDocumentTextOutline />
               </span>
-              Resume
+              History
             </NavLink>
           </li>
           <li>

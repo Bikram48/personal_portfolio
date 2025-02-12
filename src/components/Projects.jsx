@@ -1,11 +1,23 @@
 import project1img from "../assets/img/happiness_analysis.png";
 import project2img from "../assets/img/project2.png";
 import project3img from "../assets/img/project3.png";
+import project4img from "../assets/img/project4.png";
 export default function Projects() {
   return (
     <div className="aboutme">
       <h2>Projects</h2>
       <div className="project-contents">
+        <a
+          style={{ color: "black", textDecoration: "none" }}
+          href="https://github.com/Bikram48/JobMarketAnalysis"
+          target="_blank"
+        >
+          <div className="project">
+            <img src={project4img} alt="" />
+            <p>Web Scraping | Pandas | SQL | Tableau</p>
+            <h3>Job Market Analysis</h3>
+          </div>
+        </a>
         <a
           style={{ color: "black", textDecoration: "none" }}
           href="https://github.com/Bikram48/GlobalHappinessTrends"

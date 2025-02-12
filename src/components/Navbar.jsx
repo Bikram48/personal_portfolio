@@ -19,7 +19,7 @@ export default function Navbar() {
             <span>
               <IoDocumentTextOutline />
             </span>
-            Resume
+            History
           </NavLink>
         </li>
         <li>
